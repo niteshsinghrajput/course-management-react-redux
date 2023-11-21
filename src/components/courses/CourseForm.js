@@ -11,14 +11,12 @@ const CourseForm = ({
   saving = false,
   errors = {}
 }) => {
-  console.log("Hello in form ::: ");
-  console.log(authors);
   return (
     <form onSubmit={onSave}>
       <h2> {course.id ? "Edit" : "Add"} Course </h2>
       {errors.onSave && (
         <div className="alert alert-danger" role="alert">
-          {errors.onChange}
+          {errors.onSave}
         </div>
       )}{" "}
       <TextInput
@@ -39,7 +37,7 @@ const CourseForm = ({
           text: author.name
         }))}
         onChange={onChange}
-        error={errors.author}
+        error={errors.authorId}
       />
       <br />
       <TextInput
