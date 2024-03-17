@@ -9,8 +9,8 @@ server.use(middlewares);
 
 server.use(jsonServer.bodyParser);
 
-server.use(function(req, res, next) {
-  setTimeout(next, 0);
+server.use(function (req, res, next) {
+  setTimeout(next, 2000);
 });
 
 server.use((req, res, next) => {
@@ -20,7 +20,7 @@ server.use((req, res, next) => {
   next();
 });
 
-server.post("/courses/", function(req, res, next) {
+server.post("/courses/", function (req, res, next) {
   const error = validateCourse(req.body);
   if (error) {
     res.status(400).send(error);

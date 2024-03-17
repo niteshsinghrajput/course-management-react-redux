@@ -16,51 +16,11 @@
     },
     {
       "id": 3,
-      "title": "Bootstrap CSS",
-      "authorId": 1,
-      "category": "Web Development",
-      "createdAt": 1699764373990,
-      "slug": "sadasd"
-    },
-    {
-      "id": 4,
-      "title": "sadasd",
-      "authorId": 1,
-      "category": "adasd",
-      "createdAt": 1699764398646,
-      "slug": "sadasd"
-    },
-    {
-      "id": 5,
-      "title": "Core Java ",
+      "title": "Python Flask",
       "authorId": 1,
       "category": "Software Programming",
-      "createdAt": 1699764499041,
-      "slug": "core-java"
-    },
-    {
-      "id": 6,
-      "title": "Kotlin",
-      "authorId": 2,
-      "category": "Software Programming",
-      "createdAt": 1699939022290,
-      "slug": "kotlin"
-    },
-    {
-      "id": 7,
-      "title": "MERN Stack",
-      "authorId": 3,
-      "category": "Software Development",
-      "createdAt": 1699939881183,
-      "slug": "mern-stack"
-    },
-    {
-      "id": 8,
-      "title": "HTML5",
-      "authorId": 2,
-      "category": "Web Development",
-      "createdAt": 1699940484910,
-      "slug": "html5"
+      "createdAt": 1710467961388,
+      "slug": "python-flask"
     }
   ],
   "authors": [

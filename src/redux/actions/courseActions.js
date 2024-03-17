@@ -19,7 +19,7 @@ export function deleteCourseOptimistic(course) {
 }
 
 export function loadCourses() {
-  return function(dispatch) {
+  return function (dispatch) {
     dispatch(beginApiCall());
     return courseApi
       .getCourses()
@@ -34,8 +34,8 @@ export function loadCourses() {
 }
 
 export function saveCourse(course) {
-  console.log(course);
-  return function(dispatch, getState) {
+  //eslint-disable-next-line no-unused-vars
+  return function (dispatch, getState) {
     dispatch(beginApiCall());
     return courseApi
       .saveCourse(course)
@@ -52,7 +52,7 @@ export function saveCourse(course) {
 }
 
 export function deleteCourse(course) {
-  return function(dispatch) {
+  return function (dispatch) {
     dispatch(deleteCourseOptimistic(course));
     return courseApi.deleteCourse(course.id);
   };
