@@ -1,0 +1,40 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Securing React Apps with Auth0",
+      "slug": "react-auth0",
+      "authorId": 1,
+      "category": "JavaScript"
+    },
+    {
+      "id": 2,
+      "title": "Java Programming",
+      "slug": "core java",
+      "authorId": 1,
+      "category": "Java"
+    },
+    {
+      "id": 3,
+      "title": "Python Flask",
+      "authorId": 1,
+      "category": "Software Programming",
+      "createdAt": 1710467961388,
+      "slug": "python-flask"
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Nitesh Rajput"
+    },
+    {
+      "id": 2,
+      "name": "Aadhya Rajput"
+    },
+    {
+      "id": 3,
+      "name": "Suchitra Rajput"
+    }
+  ]
+}
