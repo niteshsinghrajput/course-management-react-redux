@@ -9,6 +9,27 @@
   "Language": "Javascript",
   "Port": "",
   "IsIntegratedSecurity": false,
+  "EntityLanguage": {
+    "Name": "Javascript",
+    "Definitions": [
+      {
+        "TokenType": "Entity",
+        "RegularExpression": "export const (?<entityName>[^\\s]+) ="
+      },
+      {
+        "TokenType": "Field",
+        "RegularExpression": "(?<fieldName>[^\\s]+):"
+      },
+      {
+        "TokenType": "Base Entity",
+        "RegularExpression": ""
+      }
+    ]
+  },
+  "ConversionLanguage": {
+    "Name": "Javascript",
+    "Converters": []
+  },
   "Entities": [
     {
       "Name": "students",
