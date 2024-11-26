@@ -1,0 +1,25 @@
+import { handleResponse, handleError } from "./apiUtils";
+// const baseUrl = process.env.API_URL + "/[[[zg-entity...zg-name]]]/";
+const baseUrl = "http://localhost:3001/[[[zg-entity...zg-name]]]/";
+
+export function getzg-upperFirstCase(((zg-entity...zg-name)))() {
+  return fetch(baseUrl)
+    .then(handleResponse)
+    .catch(handleError);
+}
+
+export function savezg-singularize(((zg-upperFirstCase(((zg-entity...zg-name))))))(zg-singularize(((zg-entity...zg-name)))) {
+  return fetch(baseUrl + (zg-singularize(((zg-entity...zg-name))).id || ""), {
+    method: zg-singularize(((zg-entity...zg-name))).id ? "PUT" : "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify(zg-singularize(((zg-entity...zg-name))))
+  })
+    .then(handleResponse)
+    .catch(handleError);
+}
+
+export function deletezg-singularize(((zg-upperFirstCase(((zg-entity...zg-name))))))(zg-singularize(((zg-entity...zg-name)))Id) {
+  return fetch(baseUrl + zg-singularize(((zg-entity...zg-name)))Id, { method: "DELETE" })
+    .then(handleResponse)
+    .catch(handleError);
+}

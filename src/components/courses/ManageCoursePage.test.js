@@ -1,6 +1,8 @@
 import React from "react";
 import { mount } from "enzyme";
-import { authors, newCourse, courses } from "../../../tools/mockData";
+import { authors } from "../../../tools/data/authors";
+import { courses } from "../../../tools/data/courses";
+import { newCourse } from "../../../tools/mockData";
 import { ManageCoursePage } from "./ManageCoursePage";
 
 function render(args) {
